@@ -1,23 +1,26 @@
 namespace Nager.Country.Currencies
 {
-    public class PenCurrency : ICurrency
-    {
-        ///<inheritdoc/>
-        public string Symbol => "S/";
+	/// <summary>
+	/// Pen Currency
+	/// </summary>
+	public class PenCurrency : ICurrency
+	{
+		///<inheritdoc/>
+		public string Symbol => "S/";
 
-        ///<inheritdoc/>
-        public string Singular => null;
+		///<inheritdoc/>
+		public string Singular => string.Empty;
 
-        ///<inheritdoc/>
-        public string Plural => null;
+		///<inheritdoc/>
+		public string Plural => string.Empty;
 
-        ///<inheritdoc/>
-        public string IsoCode => "PEN";
+		///<inheritdoc/>
+		public string IsoCode => "PEN";
 
-        ///<inheritdoc/>
-        public string NumericCode => "604";
+		///<inheritdoc/>
+		public string NumericCode => "604";
 
-        ///<inheritdoc/>
-        public string Name => "Peruvian Sol";
-    }
+		///<inheritdoc/>
+		public string Name => "Peruvian Sol";
+	}
 }

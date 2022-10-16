@@ -1,23 +1,26 @@
 namespace Nager.Country.Currencies
 {
-    public class RubCurrency : ICurrency
-    {
-        ///<inheritdoc/>
-        public string Symbol => "₽";
+	/// <summary>
+	/// Rub Currency
+	/// </summary>
+	public class RubCurrency : ICurrency
+	{
+		///<inheritdoc/>
+		public string Symbol => "₽";
 
-        ///<inheritdoc/>
-        public string Singular => null;
+		///<inheritdoc/>
+		public string Singular => string.Empty;
 
-        ///<inheritdoc/>
-        public string Plural => null;
+		///<inheritdoc/>
+		public string Plural => string.Empty;
 
-        ///<inheritdoc/>
-        public string IsoCode => "RUB";
+		///<inheritdoc/>
+		public string IsoCode => "RUB";
 
-        ///<inheritdoc/>
-        public string NumericCode => "643";
+		///<inheritdoc/>
+		public string NumericCode => "643";
 
-        ///<inheritdoc/>
-        public string Name => "Russian Ruble";
-    }
+		///<inheritdoc/>
+		public string Name => "Russian Ruble";
+	}
 }

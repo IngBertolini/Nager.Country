@@ -1,23 +1,26 @@
 namespace Nager.Country.Currencies
 {
-    public class SgdCurrency : ICurrency
-    {
-        ///<inheritdoc/>
-        public string Symbol => "$";
+	/// <summary>
+	/// Sgd Currency
+	/// </summary>
+	public class SgdCurrency : ICurrency
+	{
+		///<inheritdoc/>
+		public string Symbol => "$";
 
-        ///<inheritdoc/>
-        public string Singular => null;
+		///<inheritdoc/>
+		public string Singular => string.Empty;
 
-        ///<inheritdoc/>
-        public string Plural => null;
+		///<inheritdoc/>
+		public string Plural => string.Empty;
 
-        ///<inheritdoc/>
-        public string IsoCode => "SGD";
+		///<inheritdoc/>
+		public string IsoCode => "SGD";
 
-        ///<inheritdoc/>
-        public string NumericCode => "702";
+		///<inheritdoc/>
+		public string NumericCode => "702";
 
-        ///<inheritdoc/>
-        public string Name => "Singapore Dollar";
-    }
+		///<inheritdoc/>
+		public string Name => "Singapore Dollar";
+	}
 }

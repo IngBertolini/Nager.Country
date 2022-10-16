@@ -1,26 +1,26 @@
 namespace Nager.Country.Currencies
 {
-    /// <summary>
-    /// Kyd Currency
-    /// </summary>
-    public class KydCurrency : ICurrency
-    {
-        ///<inheritdoc/>
-        public string Symbol => "$";
+	/// <summary>
+	/// Kyd Currency
+	/// </summary>
+	public class KydCurrency : ICurrency
+	{
+		///<inheritdoc/>
+		public string Symbol => "$";
 
-        ///<inheritdoc/>
-        public string Singular => null;
+		///<inheritdoc/>
+		public string Singular => string.Empty;
 
-        ///<inheritdoc/>
-        public string Plural => null;
+		///<inheritdoc/>
+		public string Plural => string.Empty;
 
-        ///<inheritdoc/>
-        public string IsoCode => "KYD";
+		///<inheritdoc/>
+		public string IsoCode => "KYD";
 
-        ///<inheritdoc/>
-        public string NumericCode => "136";
+		///<inheritdoc/>
+		public string NumericCode => "136";
 
-        ///<inheritdoc/>
-        public string Name => "Cayman Islands dollar";
-    }
+		///<inheritdoc/>
+		public string Name => "Cayman Islands dollar";
+	}
 }

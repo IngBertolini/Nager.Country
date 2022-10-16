@@ -1,23 +1,26 @@
 namespace Nager.Country.Currencies
 {
-    public class SspCurrency : ICurrency
-    {
-        ///<inheritdoc/>
-        public string Symbol => "SS£";
+	/// <summary>
+	/// Ssp Currency
+	/// </summary>
+	public class SspCurrency : ICurrency
+	{
+		///<inheritdoc/>
+		public string Symbol => "SS£";
 
-        ///<inheritdoc/>
-        public string Singular => null;
+		///<inheritdoc/>
+		public string Singular => string.Empty;
 
-        ///<inheritdoc/>
-        public string Plural => null;
+		///<inheritdoc/>
+		public string Plural => string.Empty;
 
-        ///<inheritdoc/>
-        public string IsoCode => "SSP";
+		///<inheritdoc/>
+		public string IsoCode => "SSP";
 
-        ///<inheritdoc/>
-        public string NumericCode => "728";
+		///<inheritdoc/>
+		public string NumericCode => "728";
 
-        ///<inheritdoc/>
-        public string Name => "South Sudanese pound";
-    }
+		///<inheritdoc/>
+		public string Name => "South Sudanese pound";
+	}
 }
