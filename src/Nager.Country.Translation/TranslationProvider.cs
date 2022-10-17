@@ -313,6 +313,24 @@ namespace Nager.Country.Translation
 			return null;
 		}
 
+		public ILanguageTranslation? GetLanguageByName(string languageName)
+		{
+			foreach (var languageTranslation in this._languageCode2LanguageTranslation.Values)
+			{
+				if (languageTranslation.CommonName.Equals(languageName, StringComparison.OrdinalIgnoreCase))
+				{
+					return languageTranslation;
+				}
+
+				if (languageTranslation.OfficialName.Equals(languageName, StringComparison.OrdinalIgnoreCase))
+				{
+					return languageTranslation;
+				}
+			}
+
+			return null;
+		}
+
 		public ICountryTranslation? GetCountryTranslation(Alpha2Code alpha2Code)
 		{
 			if (this._alpha2Code2CountryTranslation.TryGetValue(alpha2Code, out var countryTranslation))

@@ -12,6 +12,7 @@ namespace Nager.Country.Translation
 
 		ILanguageTranslation? GetLanguage(string languageCode);
 		ILanguageTranslation? GetLanguage(LanguageCode languageCode);
+		ILanguageTranslation? GetLanguageByName(string languageName);
 
 		ICountryTranslation? GetCountryTranslation(Alpha2Code alpha2Code);
 
