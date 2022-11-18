@@ -6,7 +6,7 @@ namespace Nager.Country.Translation
 	public static class TranslationProviderExtension
 	{
 		///<inheritdoc/>
-		public static ILanguageTranslation? GetLanguageyNameConsiderTranslation(
+		public static ILanguageTranslation? GetLanguageByNameConsiderTranslation(
 			this ITranslationProvider translationProvider,
 			string languageName)
 		{

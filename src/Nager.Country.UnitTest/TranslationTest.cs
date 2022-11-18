@@ -31,7 +31,7 @@ namespace Nager.Country.UnitTest
 		public void GetLanguageByTranslatedName(string languageName, string result)
 		{
 			ITranslationProvider translationProvider = new TranslationProvider();
-			var language = translationProvider.GetLanguageyNameConsiderTranslation(languageName);
+			var language = translationProvider.GetLanguageByNameConsiderTranslation(languageName);
 			Assert.IsNotNull(language);
 			Assert.AreEqual(language.CommonName, result);
 		}
