@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5</TargetFrameworks>
+    <TargetFrameworks>net6</TargetFrameworks>
     <Authors>Tino Hager</Authors>
     <Company>nager.at</Company>
     <Description>Get country translations and language translations for Nager.Country</Description>
