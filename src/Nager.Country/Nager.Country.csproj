@@ -44,6 +44,5 @@
     <Content Include="readme.txt" Pack="true" PackagePath="\" />
     <None Include="..\..\doc\README.md" Pack="true" PackagePath="\" />
     <None Include="..\..\doc\icon.png" Pack="true" PackagePath="" Visible="false" />
-    <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 </Project>
