@@ -1,48 +1,45 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <Authors>Tino Hager</Authors>
-    <Company>nager.at</Company>
-    <Description>Get Worldwide country informations and border information</Description>
+	<PropertyGroup>
+		<Authors>Tino Hager</Authors>
+		<Company>nager.at</Company>
+		<Description>Get Worldwide country informations and border information</Description>
 
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    
-    <PackageIcon>icon.png</PackageIcon>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>Add NativeName, change Macedonia to North Macedonia</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/nager/Nager.Country</PackageProjectUrl>
-    <PackageTags>Country CountryInfo ISO3166 ISO-3166-1_Alpha2 ISO-3166-1_Alpha3 ISO639 ISO-639-1 globalization localization</PackageTags>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 
-    <RepositoryUrl>https://github.com/nager/Nager.Country</RepositoryUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>Add NativeName, change Macedonia to North Macedonia</PackageReleaseNotes>
+		<PackageProjectUrl>https://github.com/nager/Nager.Country</PackageProjectUrl>
+		<PackageTags>Country CountryInfo ISO3166 ISO-3166-1_Alpha2 ISO-3166-1_Alpha3 ISO639 ISO-639-1 globalization localization</PackageTags>
 
-    <TargetFrameworks>net6</TargetFrameworks>
+		<RepositoryUrl>https://github.com/nager/Nager.Country</RepositoryUrl>
 
-    <Version>3.1.1</Version>
+		<TargetFrameworks>net6</TargetFrameworks>
 
-    <Nullable>enable</Nullable>
+		<Version>3.1.1</Version>
 
-    <IsPublishable>False</IsPublishable>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-  </PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\..\LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="readme.txt" Pack="true" PackagePath="\" />
-    <None Include="..\..\doc\README.md" Pack="true" PackagePath="\" />
-    <None Include="..\..\doc\icon.png" Pack="true" PackagePath="" Visible="false" />
-  </ItemGroup>
+	<ItemGroup>
+		<Content Include="readme.txt" Pack="true" PackagePath="\" />
+		<None Include="..\..\doc\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\..\doc\icon.png" Pack="true" PackagePath="" Visible="false" />
+	</ItemGroup>
 </Project>
