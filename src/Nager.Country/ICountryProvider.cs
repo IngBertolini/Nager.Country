@@ -1,4 +1,6 @@
-﻿namespace Nager.Country
+﻿using System.Collections.Generic;
+
+namespace Nager.Country
 {
 	/// <summary>
 	/// ICountryProvider
